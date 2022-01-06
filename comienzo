@@ -1,6 +1,6 @@
 def compra (a,b):
     return a/b
-    
+
 def venta (a,b):
     return a*b
 
@@ -11,15 +11,15 @@ def imprimirmenu():
     print("2- Venta")
     print("3- Salir")
 
-    imprimirmenu()
-    opcion=int(input())
-    if (opcion==1):
-        num1= int(input("ingrese la cantidad de pesos que desea cambiar"))
-        num2= int(input("ingrese el valor del dolar al dia de hoy (para la compra)"))
-        print(compra(num1,num2))
-    elif(opcion==2):
-        num1= int(input("ingrese la cantidad de dolares que quiere vender"))
-        num2= int(input("ingrese el valor del dolar al dia de hoy (para la venta)"))
-        print(venta(num1,num2))
-    elif(opcion==3):
-        print("Gracias por utilizar nuestro programa, nos vemos la próxima")
+    def menu():
+        opcion=int(input())
+        if (opcion==1):
+            num1= int(input("ingrese la cantidad de pesos que desea cambiar"))
+            num2= int(input("ingrese el valor del dolar al dia de hoy (para la compra)"))
+            print(compra(num1,num2))
+        elif(opcion==2):
+            num1= int(input("ingrese la cantidad de dolares que quiere vender"))
+            num2= int(input("ingrese el valor del dolar al dia de hoy (para la venta)"))
+            print(venta(num1,num2))
+        elif(opcion==3):
+            print("Gracias por utilizar nuestro programa, nos vemos la próxima")
